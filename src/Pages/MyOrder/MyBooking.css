@@ -1,0 +1,31 @@
+.detail-btm{
+    width: 150px;
+    padding: 7px;
+    gap: 10px;
+    /* margin: 0 10px; */
+    border-radius: 10px;
+    font-weight: bold;
+    border: 0px solid rgb(1, 33, 59);
+    background: rgb(197, 195, 195) ;
+    background: -moz-linear-gradient(left, rgb(197, 195, 195) 0%, rgb(233, 172, 152) 100%);
+    background: -webkit-linear-gradient(left, rgb(197, 195, 195) 0%, rgb(233, 172, 152) 100%);
+    background: linear-gradient(to right, rgb(197, 195, 195) 0%, rgb(233, 172, 152) 100%);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+.booking1 button{
+    width: 150px;
+    padding: 7px;
+    /* margin: 0 10px; */
+    border-radius: 10px;
+    font-weight: bold;
+    border: 0px solid rgb(1, 33, 59);
+    background: rgb(233, 172, 152) ;
+    background: -moz-linear-gradient(left, rgb(233, 172, 152) 0%, rgb(197, 195, 195) 100%);
+    background: -webkit-linear-gradient(left, rgb(233, 172, 152) 0%, rgb(197, 195, 195) 100%);
+    background: linear-gradient(to right, rgb(233, 172, 152) 0%, rgb(197, 195, 195) 100%);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.5s;
+}
