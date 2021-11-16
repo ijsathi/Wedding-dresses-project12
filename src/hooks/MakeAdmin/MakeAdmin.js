@@ -1,9 +1,11 @@
 import { TextField, Button, Alert } from '@mui/material';
 import React, { useState } from 'react';
+import useAuth from '../useAuth';
 
 const MakeAdmin = () => {
     const [email, setEmail] = useState('');
     const [success, setSuccess] = useState(false);
+    const {contexts} = useAuth()
 
 
     const handleOnBlur = e =>{
@@ -14,6 +16,7 @@ const MakeAdmin = () => {
         fetch('https://evening-basin-66678.herokuapp.com/users/admin', {
             method:'PUT',
             headers:{
+                'authorization':`Bearer ${contexts.token}`,
                 'content-type':'application/json'
             },
             body:JSON.stringify(user)

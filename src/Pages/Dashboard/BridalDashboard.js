@@ -20,6 +20,7 @@ import useAuth from '../../hooks/useAuth';
 import MakeAdmin from '../../hooks/MakeAdmin/MakeAdmin';
 import AddedService from '../../components/AddedService/AddedService';
 import AllOrder from '../AllOrder/AllOrder';
+import AdminRoute from '../SignUp/AdminRoute/AdminRoute';
 
 const drawerWidth = 180;
 
@@ -36,35 +37,35 @@ function BridalDashboard(props) {
 
   const drawer = (
     <div>
-      <Toolbar ><i class="fas fa-bars"> MENU</i></Toolbar>
+      <Toolbar ><i className="fas fa-bars"> MENU</i></Toolbar>
       <Divider />
         <Link style={{textDecoration:'none',color:'black'}} to='/'>
-          <Button color="inherit"><i class="fas fa-home"></i>HOME</Button>
+          <Button color="inherit"><i className="fas fa-home"></i>HOME</Button>
         </Link><br />
         <Link style={{textDecoration:'none',color:'black'}} to={`${url}`}>
-          <Button color="inherit"><i class="fas fa-th-large"></i>DASHBOARD</Button>
+          <Button color="inherit"><i className="fas fa-th-large"></i>DASHBOARD</Button>
         </Link><br />
         <Link style={{textDecoration:'none',color:'black'}} to={`/mybooking`}>
-          <Button color="inherit"><i class="fas fa-luggage-cart"></i>MY ORDER</Button>
+          <Button color="inherit"><i className="fas fa-luggage-cart"></i>MY ORDER</Button>
         </Link><br />
         <Link style={{textDecoration:'none',color:'black'}} to='/paybill'>
-          <Button color="inherit"><i class="fas fa-file-invoice-dollar"></i>PAY BILL</Button>
+          <Button color="inherit"><i className="fas fa-file-invoice-dollar"></i>PAY BILL</Button>
         </Link><br />
         <Link style={{textDecoration:'none',color:'black'}} to='/writereview'>
-          <Button color="inherit"><i class="far fa-edit"></i>REVIEW</Button>
+          <Button color="inherit"><i className="far fa-edit"></i>REVIEW</Button>
         </Link>
         {
           contexts.admin && <Box>
             <hr />
         <Link style={{textDecoration:'none',color:'black'}} to={`${url}/addedservice`}>
-          <Button color="inherit"><i class="fas fa-cart-plus"></i>Add New Dress</Button>
+          <Button color="inherit"><i className="fas fa-cart-plus"></i>Add New Dress</Button>
         </Link>
         <Link style={{textDecoration:'none',color:'black'}} to={`${url}/allOrder`}>
-          <Button color="inherit"><i class="fas fa-tasks"></i>Manage all orders</Button>
+          <Button color="inherit"><i className="fas fa-tasks"></i>Manage all orders</Button>
         </Link>
 
         <Link style={{textDecoration:'none',color:'black'}} to={`${url}/makeAdmin`}>
-          <Button color="inherit"><i class="fas fa-user-plus"></i>Make Admin</Button>
+          <Button color="inherit"><i className="fas fa-user-plus"></i>Make Admin</Button>
         </Link>
         
           </Box>
@@ -139,15 +140,15 @@ function BridalDashboard(props) {
         <Switch>
         <Route exact path={path}>
         </Route>
-        <Route path={`${path}/makeAdmin`}>
+        <AdminRoute path={`${path}/makeAdmin`}>
           <MakeAdmin></MakeAdmin>
-        </Route>
-        <Route path={`${path}/addedservice`}>
+        </AdminRoute>
+        <AdminRoute path={`${path}/addedservice`}>
           <AddedService></AddedService>
-        </Route>
-        <Route path={`${path}/allOrder`}>
+        </AdminRoute>
+        <AdminRoute path={`${path}/allOrder`}>
          <AllOrder></AllOrder>
-        </Route>
+        </AdminRoute>
       </Switch>
       </Box>
     </Box>

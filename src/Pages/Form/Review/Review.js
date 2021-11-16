@@ -17,7 +17,7 @@ const Review = () => {
             <div className="row  row-cols-1 row-cols-md-3 p-5 gy-4 text-center" >
             {
                 services.map(dt =>
-                    <div key={dt.id}>
+                    <div key={dt._id}>
                       <div className="col services-card">
                         <div className="card ser-card h-100">
                         <div style={{textAlign:"center"}}><img className="card-img-top h-25 w-50 " src={dt.img}alt="" /></div>

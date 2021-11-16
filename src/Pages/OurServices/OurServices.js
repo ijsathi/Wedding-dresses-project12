@@ -3,12 +3,18 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import BridalFooter from '../../components/Footer/BridalFooter';
 import Header from '../../components/Header/Header';
+import useAuth from '../../hooks/useAuth';
 import './OurServices.css';
 
 const OurServices = () => {
+    const {contexts} = useAuth()
     const [services, setOurServices] = useState([])
     useEffect(()=>{
-        fetch('https://evening-basin-66678.herokuapp.com/services/')
+        fetch('https://evening-basin-66678.herokuapp.com/services/', {
+            headers:{
+                'authorization' : `Bearer ${contexts.token}`
+            }
+        })
         .then(result=> result.json())
         .then(data=>setOurServices(data))
     },[])
@@ -44,7 +50,7 @@ const OurServices = () => {
                                  <Row className='booking ' style={{textAlign:"center"}}>
                                  <Col style={{color:'rgb(20, 51, 42)'}}> {dt.class}</Col>
                                     <Col className='details-btn'> <Link style={{textAlign:"center"}} to={`/more/${dt._id}`}>
-                                    <button>View Details <i class="fas fa-info-circle"></i></button>
+                                    <button>View Details <i className="fas fa-info-circle"></i></button>
                                 </Link></Col>
                                  </Row>
                              </Container>

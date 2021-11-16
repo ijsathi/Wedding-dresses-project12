@@ -35,7 +35,7 @@ const BridalFooter = () => {
                         <ul>
                         <h4>Showroom</h4>
                             <li><i className="fas fa-map-marker-alt"></i>   Banani Level - 4, South Bridge Center, <br /> Road - 11, Building - 05, Block - G, Banani</li>
-                            <li><i class="far fa-clock"></i> Monday - Friday: 8am - 4pm <br />
+                            <li><i className="far fa-clock"></i> Monday - Friday: 8am - 4pm <br />
                                 Saturday: 9am - 5pm</li>
                             <li><i className="far fa-envelope"></i>    bridaly@gmail.com</li>
                             <li><i className="fas fa-globe-europe"></i>     www.bridaly.info.com</li>
