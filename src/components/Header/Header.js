@@ -22,10 +22,6 @@ const Header = () => {
                 <Nav.Link>
                     <Link style={{color:'#213e36', fontWeight:'bold',textDecoration:'none'}} to='/dresses'>Dresses</Link> 
                 </Nav.Link>
-                
-                {/* <Nav.Link>
-                    <Link style={{fontWeight:'bold', textDecoration:'none'}} to='/mybooking'>My Order{selectedBooking.length}</Link> 
-                </Nav.Link> */}
                 <NavDropdown style={{color:'#213e36',fontWeight:'bold'}} title=" More" id="basic-nav-dropdown">
                     <NavDropdown.Item href="">
                       <Nav.Link>

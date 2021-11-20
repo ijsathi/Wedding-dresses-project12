@@ -18,7 +18,6 @@ import Opinion from './Pages/Opinion/Opinion';
 import MyBooking from './Pages/MyOrder/MyBooking';
 import Thanks from './Pages/Thanks/Thanks';
 import Form from './Pages/Form/Form';
-// import AddedService from './components/AddedService/AddedService';
 import BridalFooter from './components/Footer/BridalFooter';
 import BridalBanner from './components/Banner/BridalBanner';
 import BridalDashboard from './Pages/Dashboard/BridalDashboard';
@@ -81,9 +80,9 @@ function App() {
          <Route path='/banner'>
            <BridalBanner></BridalBanner>
          </Route>
-         <Route path='/bridaldashboard'>
+         <PrivateRoute path='/bridaldashboard'>
            <BridalDashboard></BridalDashboard>
-         </Route>
+         </PrivateRoute>
          <Route path='/myBuying'>
            <MyBuying></MyBuying>
          </Route>

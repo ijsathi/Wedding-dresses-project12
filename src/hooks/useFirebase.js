@@ -53,7 +53,6 @@ const useFirebase = () =>{
 
     const signInWithGoogle  = (location, history) =>{
         setLoading(true);
-        // saveUser(user.email, user.displayName, 'PUT');
        signInWithPopup(auth, googleProvider)
         .then((result) => {
             const user = result.user;

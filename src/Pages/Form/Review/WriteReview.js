@@ -24,7 +24,7 @@ const WriteReview = () => {
             <h2 className='text-center p-5' style={{color:'rgb(33, 62, 54)'}}>Please Add Your Review</h2>
             
             <form onSubmit={handleSubmit(onSubmit)}>
-      <input {...register("img")}placeholder='image url' />
+      <input {...register("img")}placeholder='your image url' />
       <input {...register("name", { required: true, maxLength: 20 })} placeholder='please write your name' />
       <textarea {...register("review")}placeholder='write your review' />
       <input type="string" {...register("work")}placeholder='write your profession' />

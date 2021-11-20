@@ -33,7 +33,7 @@ const MyBooking = () => {
               <ShoppingCartIcon />
             </StyledBadge>
             </IconButton>
-                <h4><i className="fas fa-file-invoice-dollar"></i>  {totalPrice}</h4>
+                <h4><i className="fas fa-file-invoice-dollar"></i>  {totalPrice.toFixed(2)}</h4>
                 <Link to='/form'>
                   <button>Order Place</button>
                 </Link>
@@ -60,10 +60,6 @@ const MyBooking = () => {
                 <p><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star-half-alt"></i></p>
                 </Col>
                 <Col>
-                {/* <div className='booking1' >
-                                    <button>View Details <i className="fas fa-info-circle"></i></button>
-                            </div><hr /> */}
-                           
                             <Row>
                               <Col>
                               <button className=' detail-btm' onClick={() => remove (booking._id)}><i className="fas fa-trash"></i> Remove </button></Col>

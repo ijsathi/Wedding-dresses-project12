@@ -12,7 +12,6 @@ import Badge from '@mui/material/Badge';
 import IconButton from '@mui/material/IconButton';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import DeleteIcon from '@mui/icons-material/Delete';
-import useAuth from '../../hooks/useAuth';
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
     '& .MuiBadge-badge': {
@@ -43,7 +42,6 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
     },
   }));
 const AllOrder = () => {
-    const {selectedBooking, remove} = useAuth();
     const [allOrder,setAllOrder ] = useState([]);
 
     useEffect(() =>{
@@ -52,6 +50,23 @@ const AllOrder = () => {
         .then(data => setAllOrder(data))
     },[])
 
+    const handleDeleteUser = id =>{
+      const proceed = window.confirm('Are You Sure, you want to delete?!?')
+      if(proceed){
+          const uri=`https://evening-basin-66678.herokuapp.com/cart/${id}`;
+      fetch(uri, {
+          method: 'DELETE'
+      })
+      .then(res => res.json())
+      .then(data => {
+          if(data.deletedCount > 0){
+              
+              const remainigOrders = allOrder.filter(allOrder => allOrder._id !== id)
+              setAllOrder(remainigOrders)
+          }
+      }) 
+      }
+  }
     return (
         <>
             <IconButton aria-label="cart">
@@ -79,17 +94,9 @@ const AllOrder = () => {
                       <StyledTableCell align="right">{row.name}</StyledTableCell>
                       <StyledTableCell align="right">{row.price}</StyledTableCell>
                       <StyledTableCell align="right">
-                          {
-                              selectedBooking.map(booking=>(
-                                <IconButton  onClick={() => remove (booking._id)} aria-label="delete">
+                          <IconButton  onClick={() => handleDeleteUser(row._id)} aria-label="delete">
                                 <DeleteIcon  />
                              </IconButton>
-                              ))
-                         } 
-                          
-                          {/* <IconButton  onClick={() => remove (booking._id)} aria-label="delete">
-                                <DeleteIcon  />
-                             </IconButton> */}
                      </StyledTableCell>
                     </StyledTableRow>
                   ))}

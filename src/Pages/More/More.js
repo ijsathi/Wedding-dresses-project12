@@ -3,15 +3,13 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import BridalFooter from '../../components/Footer/BridalFooter';
-// import { Link } from 'react-router-dom';
 import Header from '../../components/Header/Header';
 import useAuth from '../../hooks/useAuth';
-import './More.css'
+import './More.css';
 
 const More = () => {
   const {id} = useParams();
-  const {addToCart} =useAuth()
-    // const {booking} = useAuth();
+  const {addToCart} =useAuth();
     const [service, setService] = useState({})
     useEffect(()=>{
       fetch(`https://evening-basin-66678.herokuapp.com/services/${id}`)
@@ -52,9 +50,7 @@ const More = () => {
                </Row> <br />
                <Row>
                <Col className='booking'>
-               {/* <Link to='/form'> */}
                <button onClick={() => addToCart(service)}> ADD TO CART </button>
-               {/* </Link> */}
                 </Col>
                 <Col className='booking'>
                <Link to='/writereview'>

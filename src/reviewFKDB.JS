@@ -1,5 +1,5 @@
 const review = [
-    {id:1, name:'Talha Tanu', img:'https://image.freepik.com/free-photo/cheerful-curly-business-girl-wearing-glasses_176420-206.jpg',work:'Student', review:'This Shop Dresses Too good.', rating:4},
-    {id:2, name:'Sinjhi Sanha', img:'https://image.freepik.com/free-photo/cheerful-curly-business-girl-wearing-glasses_176420-206.jpg',work:'Job', review:'This Shop Dresses is best.', rating:5},
-    {id:3, name:'Sarker Ahmed', img:'https://image.freepik.com/free-photo/cheerful-curly-business-girl-wearing-glasses_176420-206.jpg',work:'Engineer', review:'This Shop Dresses is very good.', rating:5},
+    {id:1, name:'Talha Tanim', img:'https://st.depositphotos.com/1743476/2206/i/950/depositphotos_22064363-stock-photo-happy-college-student.jpg',work:'Student', review:'This Shop Dresses Too good.', rating:4},
+    {id:2, name:'Haridash', img:'https://scontent.fdac27-1.fna.fbcdn.net/v/t39.30808-6/241247015_1319018495198453_946646966905184291_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHSvwPCvEsowep_Tq-gcmsgaVj-vJrhMNxpWP68muEw3FYzyJwqJKX4IkO55PT3Uui6w8rBuJUkHIiv-YPkKGT_&_nc_ohc=t_7TqE2mRBAAX_nhkyt&_nc_ht=scontent.fdac27-1.fna&oh=3b527141bf238f985c6114832e3656d3&oe=6198D2FF',work:'To To Company manager', review:'This Shop Dresses is best.', rating:5},
+    {id:3, name:'Sarker Ahmed', img:'https://images.unsplash.com/photo-1580067644090-a03da9d1e360?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2Nob29sJTIwYm95fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80',work:'Engineer', review:'This Shop Dresses is very good.', rating:5},
 ]

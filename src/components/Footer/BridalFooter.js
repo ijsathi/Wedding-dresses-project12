@@ -14,11 +14,11 @@ const BridalFooter = () => {
                 <div className="footer">
                     <div className="single-footer">
                         <ul>
-                            <li><a ><i className="fas fa-chevron-right"></i>Home</a></li>
-                            <li><a><i className="fas fa-chevron-right"></i>Dress's</a></li>
-                            <li><a><i className="fas fa-chevron-right"></i>Showroom</a></li>
-                            <li><a ><i className="fas fa-chevron-right"></i>About Us</a></li>
-                            <li><a><i className="fas fa-chevron-right"></i>Contact Us</a></li>
+                            <li><i className="fas fa-chevron-right"></i>Home</li>
+                            <li><i className="fas fa-chevron-right"></i>Dress's</li>
+                            <li><i className="fas fa-chevron-right"></i>Showroom</li>
+                            <li><i className="fas fa-chevron-right"></i>About Us</li>
+                            <li><i className="fas fa-chevron-right"></i>Contact Us</li>
                         </ul>
                         <div className="footer-social">
                             <a href="https://www.facebook.com/"><i className="fab fa-facebook"></i></a>
