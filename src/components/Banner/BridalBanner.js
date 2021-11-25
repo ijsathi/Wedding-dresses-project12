@@ -44,7 +44,7 @@ function BridalBanner() {
       <p style={{color:"white"}}>
           <img src={logo} alt="" />
       </p>
-      <h1><span style={{fontWeight:'bold',color:'rgb(88, 82, 94)'}}>75% OFF</span> </h1>
+      <h1><span style={{fontWeight:'bold',color:'rgb(88, 82, 94)'}}>25% OFF</span> </h1>
       <h3 style={{fontWeight:'bold',color:'rgb(88, 82, 94)'}}>and free Ship order over $100. 
       <img style={{width:'70px'}} src="https://cdn-icons-png.flaticon.com/512/5976/5976095.png" alt="" /></h3>
       <div>
