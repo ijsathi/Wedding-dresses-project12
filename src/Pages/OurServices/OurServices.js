@@ -26,7 +26,7 @@ const OurServices = () => {
                 <h1><span style={{fontWeight:'bold',color:'rgb(234 142 112)'}}>O</span>ur Popular Dresses</h1>
                 <p>Bringing to life all the loveliness a bride has long envisioned, finding your beautiful wedding dress with us creates wonderful memories that will last forever.</p>
             </div>
-            <div className="row  row-cols-1 row-cols-md-3 p-5 gy-4 text-center" >
+            <div className="row w-100 row-cols-1 row-cols-md-3 p-5 gy-4 text-center" >
             {
                 services.map(dt =>
                     <div key={dt.id}>

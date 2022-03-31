@@ -31,6 +31,6 @@
     /* box-shadow:0 0 10px rgb(33, 62, 54),0 0 10px rgb(33, 62, 54), 0 0 80px rgb(33, 62, 54);rgb(233, 172, 152) */
 }
 .ser-card:hover{
-    box-shadow:0 0 10px gray,0 0 10px gray, 0 0 80px gray;
-    background: rgb(248, 242, 243);
+    box-shadow:0 0 10px gray,0 0 10px gray;
+    background: #f3f7f7;
 }

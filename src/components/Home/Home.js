@@ -5,11 +5,10 @@ import Part1 from '../Extra/Part1';
 import BridalFooter from '../Footer/BridalFooter';
 import Header from '../Header/Header';
 import Services from '../Services/Services';
-import './Home.css'
 
 const Home = () => {
     return (
-        <div className='home'>
+        <div>
             <Header></Header>
             <BridalBanner></BridalBanner>
             <Services></Services>

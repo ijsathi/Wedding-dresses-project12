@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 // import useAuth from '../../hooks/useAuth';
-import './Services.css';
 import latest from '../../images/logo/icon-logo.png'
 
 const Services = () => {
@@ -21,12 +20,12 @@ const Services = () => {
             <h1 style={{color:'rgb(88, 82, 94)'}}>𝓑𝓮𝓼𝓽 𝓼𝓮𝓵𝓵𝓮𝓻</h1><br />
             <h6 style={{color:'rgb(88, 82, 94)'}}>𝒩𝑒𝓌 𝐿𝑜𝑜𝓀𝓈 𝒯𝑜 𝐿𝑜𝓋𝑒</h6>
         </div>
-         <div className="row  row-cols-1 row-cols-md-3 p-5 gy-4 " >
+         <div className="row w-100 row-cols-1 row-cols-md-3 p-5 gy-4 " >
             {
                 services.slice(0,6).map(dt =>
                     <div key={dt.id}>
-                      <div className="col services-card">
-                        <div className="card ser-card h-100">
+                      <div  className="col">
+                        <div className="card ser-card  h-100">
                         <Link className='more-img' to={`/more/${dt._id}`}>
                         <img className="card-img-top " height='450px' src={dt.img}alt="" />
                             </Link>

@@ -27,79 +27,80 @@ import Review from './Pages/Form/Review/Review';
 import MyBuying from './Pages/MyOrder/MyBuying';
 import WriteReview from './Pages/Form/Review/WriteReview';
 import PayBill from './Pages/Dashboard/PayBill/PayBill';
+import Header from './components/Header/Header';
 
 function App() {
   return (
-    <div className="">
+    <div>
       <AuthProvider>
-      <Router>
-       <Switch>
-         <Route exact path='/'>
-           <Home></Home>
-         </Route>
-         
-         <Route path='/home'>
-           <Home></Home>
-         </Route>
-         <PrivateRoute path='/dresses'>
-           <OurServices></OurServices>
-         </PrivateRoute>
-         <PrivateRoute path='/mybooking'>
-            <MyBooking></MyBooking>
-         </PrivateRoute>
-         <Route path='/aboutus'>
-           <AboutUs></AboutUs>
-         </Route>
-         <Route path='/contactus'>
-            <ContactUs></ContactUs>
-         </Route>
-         <PrivateRoute path='/more/:id'>
-            <More></More>
-          </PrivateRoute>
-          <Route path='/signup'>
-            <SignUp></SignUp>
-          </Route>
-          <Route path='/opinion'>
-          <Opinion></Opinion>
-          </Route>
-          <Route path='/review'>
-            <Review></Review>
-          </Route>
-          <Route path='/writereview'>
-            <WriteReview></WriteReview>
-          </Route>
-          <Route path='/thanks'>
-            <Thanks> </Thanks>
-          </Route>
-          <Route path='/form'>
-            <Form></Form>
-          </Route>
-          <Route path="/bridalFooter">
-           <BridalFooter></BridalFooter>
-         </Route>
-         <Route path='/banner'>
-           <BridalBanner></BridalBanner>
-         </Route>
-         <PrivateRoute path='/bridaldashboard'>
-           <BridalDashboard></BridalDashboard>
-         </PrivateRoute>
-         <Route path='/myBuying'>
-           <MyBuying></MyBuying>
-         </Route>
-         <Route path='/signin'>
-           <SignIn></SignIn>
-         </Route>
-         <Route path='/reg'>
-           <Register></Register>
-         </Route>
-         <Route path='/paybill'>
-           <PayBill></PayBill>
-         </Route>
-         <Route path="*">
-           <NotFound></NotFound>
-         </Route>
-       </Switch>
-     </Router>
+        <Router>
+          <Switch>
+            <Route exact path='/'>
+              <Home></Home>
+            </Route>
+
+            <Route path='/home'>
+              <Home></Home>
+            </Route>
+            <PrivateRoute path='/dresses'>
+              <OurServices></OurServices>
+            </PrivateRoute>
+            <PrivateRoute path='/mybooking'>
+              <MyBooking></MyBooking>
+            </PrivateRoute>
+            <Route path='/aboutus'>
+              <AboutUs></AboutUs>
+            </Route>
+            <Route path='/contactus'>
+              <ContactUs></ContactUs>
+            </Route>
+            <PrivateRoute path='/more/:id'>
+              <More></More>
+            </PrivateRoute>
+            <Route path='/signup'>
+              <SignUp></SignUp>
+            </Route>
+            <Route path='/opinion'>
+              <Opinion></Opinion>
+            </Route>
+            <Route path='/review'>
+              <Review></Review>
+            </Route>
+            <Route path='/writereview'>
+              <WriteReview></WriteReview>
+            </Route>
+            <Route path='/thanks'>
+              <Thanks> </Thanks>
+            </Route>
+            <Route path='/form'>
+              <Form></Form>
+            </Route>
+            <Route path="/bridalFooter">
+              <BridalFooter></BridalFooter>
+            </Route>
+            <Route path='/banner'>
+              <BridalBanner></BridalBanner>
+            </Route>
+            <PrivateRoute path='/bridaldashboard'>
+              <BridalDashboard></BridalDashboard>
+            </PrivateRoute>
+            <Route path='/myBuying'>
+              <MyBuying></MyBuying>
+            </Route>
+            <Route path='/signin'>
+              <SignIn></SignIn>
+            </Route>
+            <Route path='/reg'>
+              <Register></Register>
+            </Route>
+            <Route path='/paybill'>
+              <PayBill></PayBill>
+            </Route>
+            <Route path="*">
+              <NotFound></NotFound>
+            </Route>
+          </Switch>
+        </Router>
       </AuthProvider>
     </div>
   );

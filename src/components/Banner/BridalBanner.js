@@ -21,7 +21,7 @@ function BridalBanner() {
   };
 
   return (
-      <div className="banner">
+      <div className="banner w-100">
     <Box id='slideImg'>
       <AutoPlaySwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
